@@ -1,0 +1,10 @@
+# ignoruj wszytskie w podkatalogu cpp
+cpp/*
+# ale nie źródłowe
+!cpp/*.c
+!cpp/*.cpp
+!cpp/*.cxx
+!cpp/Makefile
+
+# wzorce dla Puthona
+*.pyc

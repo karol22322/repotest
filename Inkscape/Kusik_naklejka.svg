@@ -97,13 +97,13 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter9802"
-       x="-0.0036290374"
-       width="1.0072581"
-       y="-0.0028828211"
-       height="1.0057656">
+       x="-0.017993973"
+       width="1.0359879"
+       y="-0.014569199"
+       height="1.0291384">
       <feGaussianBlur
          inkscape:collect="always"
-         stdDeviation="0.12311561"
+         stdDeviation="0.64898437"
          id="feGaussianBlur9804" />
     </filter>
   </defs>
@@ -114,9 +114,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="160.26129"
-     inkscape:cy="654.17872"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="240.9438"
+     inkscape:cy="616.13007"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -133,7 +133,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -142,7 +142,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="opacity:1;fill:#00bcff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.02706802;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.02706802;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 178.54492,501.92773 A 188.97638,188.97638 0 0 0 360.4043,639.66211 188.97638,188.97638 0 0 0 549.38086,450.68555 188.97638,188.97638 0 0 0 360.4043,261.70898 a 188.97638,188.97638 0 0 0 -76.75,16.54688 z"
        id="path4513"
        inkscape:connector-curvature="0"
@@ -164,24 +164,24 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot7568"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ececec;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9802)"
-       transform="matrix(0.87336704,0.346501,-0.27038741,0.72047162,-141.61225,-300.92364)"><flowRegion
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9802)"
+       transform="matrix(0.80314695,0.3276547,-0.24864783,0.68128495,-124.97434,-278.95452)"><flowRegion
          id="flowRegion7570"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#ececec"><rect
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#f9f9f9"><rect
            id="rect7572"
            width="181.42857"
            height="180"
            x="304.28571"
            y="343.94824"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#ececec" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#f9f9f9" /></flowRegion><flowPara
          id="flowPara7574"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.01389401px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#ececec;fill-opacity:1">STI</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.01389401px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#f9f9f9;fill-opacity:1">STI</flowPara><flowPara
          id="flowPara7576"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.01389401px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#ececec;fill-opacity:1">CKY</flowPara></flowRoot>    <path
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.01389401px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#f9f9f9;fill-opacity:1">CKY</flowPara></flowRoot>    <path
        inkscape:connector-curvature="0"
        id="path6028"
        d="M 75.050199,73.621862 47.240009,132.80171 A 50,50 0 0 0 76.933288,87.179689 50,50 0 0 0 75.050199,73.621862 Z"
-       style="opacity:1;fill:#00bcff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27174509;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7316)"
+       style="opacity:1;fill:#ff2a2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27174509;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7316)"
        clip-path="url(#clipPath6960)" />
   </g>
 </svg>

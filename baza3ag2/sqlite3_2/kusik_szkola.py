@@ -12,9 +12,9 @@ def wyniki(dane):
     
 def kw_a(cur):
     cur.execute('''
-        SELECT Imie, Nazwisko, tbKlasy.klasa
+        SELECT Imie, Nazwisko
         FROM tbUczniowie, tbKlasy
-        WHERE tbUczniowie.klasaID = tbKlasy.IDklasy
+        WHERE tbKlasy.IDklasy = tbUczniowie.klasaID
         AND tbKlasy.Klasa = '1A'
         ''')
     wyniki = cur.fetchall()
@@ -54,6 +54,7 @@ def kw_d(cur):
         WHERE tbOceny.UczenID = tbUczniowie.IDucznia
         AND Imie = "Dorota" 
         AND Nazwisko = "Nowak"
+        ORDER BY tbOceny.Ocena DESC
         ''')
     wyniki = cur.fetchall()
     for row in wyniki:
@@ -66,7 +67,7 @@ def kw_e(cur):
         FROM tbOceny, tbPrzedmioty
         WHERE strftime('%m', datad) LIKE '10'
         AND tbPrzedmioty.Przedmiot = 'fizyka'
-        AND tbOceny.PrzedmiotID = tbPrzedmioty.IDPrzedmiotu
+        AND tbPrzedmioty.IDPrzedmiotu = tbOceny.PrzedmiotID
         ''')
     wyniki = cur.fetchall()
     for row in wyniki:
@@ -76,8 +77,12 @@ def kw_e(cur):
         
 def main(args):
     con = sqlite3.connect('szkola.db')
-    cur = con.cursor()  # utworzenie kursora
+    cur = con.cursor()
     
+    #kw_a(cur) 
+    #kw_b(cur)
+    #kw_c(cur)
+    #kw_d(cur)
     kw_e(cur)
    
     return 0

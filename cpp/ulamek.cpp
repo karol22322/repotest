@@ -24,10 +24,8 @@ public:
     int get_m() {
         return mianownik;
     }
-    void skracaj() {
-        // algorytm euklidesa w wersji optymalnej
-        ;
-    }
+    int skracaj()
+   ; 
 }; // koniec definicji klasy
 
 void Ulamek::zapisz(int l, int m) {
@@ -50,7 +48,8 @@ Ulamek::Ulamek(int l, int m) {
 }
 
 int main(int argc, char **argv)
-{
+{   
+    
     Ulamek ul1(4, 5);
     Ulamek ul2(1, 7);
     //ul1.zapisz(4, 5);
@@ -62,7 +61,7 @@ int main(int argc, char **argv)
     
     cout << ul1.get_l() << endl;
     cout << ul1.get_m() << endl;
-	
+
 	return 0;
 }
 

@@ -39,7 +39,7 @@ int main(int argc, char **argv)
     stack = new int[sr];
     
     srand(time(NULL));
-    for (int i=0; i < sr+3; i++) {
+    for (int i=0; i < sr; i++) {
         push(stack, sp, sr, rand()%100 + 1);
     }
     

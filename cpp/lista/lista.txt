@@ -1,0 +1,142 @@
+/////////////////////// lista.hpp
+
+
+
+#ifndef LISTA_HPP
+#define LISTA_HPP
+
+struct ELEMENT {
+    int wartosc;
+    ELEMENT *nastepny;
+};
+
+class Lista {
+    private: // hermetyzacja
+        ELEMENT *head;
+        ELEMENT *tail;
+    public: // interfejs publiczny klasy - API klasy
+        Lista(); // konstruktor
+        ~Lista(); // dekonstruktor
+        void Dodaj(int);
+        void Wyswietl();
+        bool Usun();
+    
+};
+#endif
+
+
+
+////////////////////////////////////// lista.cpp
+
+
+
+/*
+ * lista.cpp
+ * 
+ */
+
+
+#include <iostream>
+#include "lista.hpp"
+
+Lista::Lista(){
+    head = NULL;
+    tail = NULL;
+}
+
+Lista::~Lista(){
+    while(Usun()) {;}; // usunięcie wszystkich elementów z listy
+}
+
+void Lista::Dodaj(int wartosc) {
+    ELEMENT *el = new ELEMENT;
+    el->wartosc = wartosc;
+    el->nastepny = NULL;
+    if (head == NULL) { // lista była pusta
+        head = el;
+        tail = el;
+    } else {
+        tail->nastepny = el;// ustawienie wskaznika nastepny 
+        // dotychczasowego ostatniego elementu na adres nowego elementu
+        tail = el; // aktualizacja wskaznika do ostatniego elementu
+    }
+}
+
+void Lista::Wyswietl(){
+    ELEMENT *el = head;
+    while (el != NULL) {
+        std::cout << el->wartosc << " ";
+        el = el->nastepny;
+    }
+}
+
+bool Lista::Usun(){
+    if (head != NULL) { // lista zawiera elementy!
+        if (head == tail) { // usuwamy ostatni element
+            delete head; // usuwamy zmienną wskazywaną przez head
+            head = NULL;
+            tail = NULL;
+        } else { // usuwamy ostatni element z listy
+            ELEMENT *el = head;
+            while (el->nastepny != tail) { // szukam przedostatniego elementu
+                el = el->nastepny;
+            }
+            delete el->nastepny;
+            el->nastepny = NULL;
+            tail = el;
+        }
+        return true;
+    }
+    return false;
+}
+
+///////////////////////////////////// lista_main.cpp
+
+
+
+/*
+ * lista_main.cpp
+ * 
+ * 
+ */
+
+
+#include <iostream>
+#include "lista.hpp"
+
+using namespace std;
+
+int main(int argc, char **argv)
+{
+    Lista lista;
+    lista.Dodaj(1);
+    lista.Dodaj(3);
+    lista.Dodaj(5);
+    lista.Dodaj(7);
+    lista.Dodaj(9);
+    lista.Wyswietl();
+	
+	return 0;
+}
+
+
+////////////////////// makefile
+
+CXX=g++
+CXXFLAGS=-Wall -I.
+OBJS=lista.o lista_main.o
+
+pong: lista.o lista_main.o
+	$(CXX) $(CXXFLAGS) $(OBJS) -o lista_main.exe
+	
+.PHONY: clean
+
+clean:
+	rm -f *.o *~ core *~
+
+
+
+
+
+
+

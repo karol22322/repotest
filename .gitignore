@@ -1,10 +1,12 @@
-# ignoruj wszytskie w podkatalogu cpp
-cpp/*
-# ale nie źródłowe
-!cpp/*.c
-!cpp/*.cpp
-!cpp/*.cxx
-!cpp/Makefile
+*.o
+*.out
+*.exe
+*.lck
+.~*
 
-# wzorce dla Puthona
-*.pyc
+__pycache__/
+*.py[cod]
+venv
+pve
+
+.DS_Store

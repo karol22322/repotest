@@ -1,0 +1,27 @@
+KLASA SAMOCHOD
+Komis samochodowy
+lista samochodów
+klasa samochodu
+marka
+model
+pojemnosc silnika
+pojemnosc baku
+spalanie
+zatankuj(20)
+jedz(100)
+
+KLASA UCZEN
+imie
+nazwisko
+klasa
+oceny
+srednia()
+ustaw_klase("1A")
+
+KLASA FIGURA
+typ (kwadrat, prostokąt itd.)
+nazwa
+pole
+obwod
+getPole()
+getObwod()

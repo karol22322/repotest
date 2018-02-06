@@ -58,6 +58,17 @@ bool Lista::Usun(){
     return false;
 }
 
-void Lista::Wstaw(int pozycja, int wartosc) {
-    ;
+//~ void Lista::Wstaw(int pozycja, int wartosc) {
+    //~ ;
+//~ }
+
+void Lista::Wstaw(int pozycja, int wartosc) { 
+    ELEMENT *el = new ELEMENT;
+    el->wartosc = pozycja;
+    el->nastepny = el;
+    if(pozycja > int(tail->nastepny)) {
+        tail->nastepny = el;// ustawienie wskaznika nastepny 
+        // dotychczasowego ostatniego elementu na adres nowego elementu
+        tail = el; // aktualizacja wskaznika do ostatniego elementu
+    }
 }

@@ -58,6 +58,34 @@ bool Lista::Usun(){
     return false;
 }
 
-void Lista::Wstaw(int pozycja, int wartosc) {
-    ;
+
+
+
+void Lista::Wstaw(int pozycja, int wart){
+	if (pozycja < 0)	pozycja *= (-1);	
+    if(pozycja != 0){
+		if(pozycja > i){
+			Dodaj(wart);				
+		}
+		else if (pozycja == 1) {		
+			ELEMENT *el = new ELEMENT;
+			el -> wartosc = wart;
+			el -> nastepny = head;
+			head = el;
+			i++;
+		} else {
+			ELEMENT *el = new ELEMENT;
+			el -> wartosc = wart;	
+
+			ELEMENT *p = head;		
+
+			for (int k = 1; k != pozycja - 1; k++)
+				p = p -> nastepny;	
+
+			el -> nastepny = p -> nastepny;
+			p -> nastepny = el;
+
+			i++;
+		}
+	}
 }

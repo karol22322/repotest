@@ -12,6 +12,9 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
+    int a, b;
+    cout << "Podaj numer miejsca i liczbę: " << endl;
+    cin >> a >> b;
     Lista lista;
     lista.Dodaj(1);
     lista.Dodaj(3);
@@ -21,6 +24,8 @@ int main(int argc, char **argv)
     lista.Wyswietl();
     lista.Usun();
     cout << endl;
+    lista.Wstaw(a, b);
+    lista.Wyswietl();
 	
 	return 0;
 }

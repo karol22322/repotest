@@ -61,9 +61,51 @@ void dodajWezel(WEZEL *wezel, int wartosc) {
     }
 }
 
+void wyswietlRosnoco(WEZEL *wezel) {
+    if (wezel != NULL) {
+        // rekurencyjne wwyświetlenie lewego poddrzewa
+        wyswietlRosnoco(wezel->lewy);
+        // wypisz wartość aktualnego węzła
+        cout << wezel->wartosc << ", ";
+        // rekurencyjne wyświetlenie prawego poddrzewa
+        wyswietlRosnoco(wezel->prawy);
+    }    
+}
+
+void wyswietlMalejaco(WEZEL *wezel) {
+    if (wezel != NULL) {
+        // rekurencyjne wwyświetlenie prawego poddrzewa
+        wyswietlMalejaco(wezel->prawy);
+        // wypisz wartość aktualnego węzła
+        cout << wezel->wartosc << ", ";
+        // rekurencyjne wyświetlenie lewego poddrzewa
+        wyswietlMalejaco(wezel->lewy);
+    }    
+}
+
+
 
 int main(int argc, char **argv)
 {
+    dodajWezel(korzen, 8);
+    dodajWezel(korzen, 3);
+    dodajWezel(korzen, 10);
+    dodajWezel(korzen, 1);
+    dodajWezel(korzen, 6);
+    dodajWezel(korzen, 4);
+    dodajWezel(korzen, 7);
+    dodajWezel(korzen, 14);
+    dodajWezel(korzen, 13);
+    
+    cout << "Drzewo posortowane niemalejąco: " << endl;
+    wyswietlRosnoco(korzen);
+    
+    cout << endl;
+    
+    cout << "Drzewo posortowane nierosnąco: " << endl;
+    wyswietlMalejaco(korzen);
+    
+    
 	
 	return 0;
 }
